@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 /// -------------------------------
 /// Smart SliverGrid
 /// -------------------------------
+
 class SmartSliverGrid extends StatelessWidget {
   final int itemCount;
   final IndexedWidgetBuilder itemBuilder;

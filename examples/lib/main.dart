@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_views/smart_views.dart';
-import '../../src/smart_animated_list_view.dart';
+import 'package:smart_views/src/smart_animated_list_view.dart';
 
 void main() => runApp(const DemoApp());
 

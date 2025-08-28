@@ -72,7 +72,7 @@ class _SmartAnimatedPageViewState<T> extends State<SmartAnimatedPageView<T>> {
               value = (_controller.initialPage - index).toDouble();
             }
 
-            // ✅ Apply animations
+            // Apply animations
             switch (widget.animationType) {
               case PageAnimationType.fade:
                 return Opacity(

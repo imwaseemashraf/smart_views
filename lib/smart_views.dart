@@ -1,6 +1,6 @@
 library;
 
-export 'src/smart-sliver_list.dart';
+export 'src/smart_sliver_list.dart';
 export 'src/smart_animations.dart';
 export 'src/smart_sliver_grid.dart';
 export 'src/smart_list_view.dart';
