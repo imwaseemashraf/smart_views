@@ -149,7 +149,7 @@ Tests cover:
 ## 🤝 Contributing
 
 Contributions are welcome!
-Feel free to open issues and PRs on [GitHub](https://github.com/yourusername/smart_views).
+Feel free to open issues and PRs on [GitHub](https://github.com/imwaseemashraf/smart_views).
 
 ---
 
