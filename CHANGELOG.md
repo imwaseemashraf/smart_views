@@ -3,6 +3,9 @@
 
 # 📑 CHANGELOG
 
+[0.0.2] - 2025-08-28
+📝 Updated README.md with usage examples and installation instructions.
+
 ## \[0.0.1] - 2025-08-28
 
 * 🎉 Initial release of `smart_views`
