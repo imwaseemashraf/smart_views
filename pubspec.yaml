@@ -1,10 +1,12 @@
 name: smart_views
 description: Smart List/Grid views with automatic empty states and simple item animations.
-version: 0.0.2
-homepage:
+version: 0.0.3
+homepage: https://github.com/imwaseemashraf/smart_views
 repository: https://github.com/imwaseemashraf/smart_views
 issue_tracker: https://github.com/imwaseemashraf/smart_views/issues
+documentation: https://github.com/imwaseemashraf/smart_views/blob/main/README.md
 license: MIT
+
 
 
 environment:
