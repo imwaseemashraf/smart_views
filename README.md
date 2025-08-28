@@ -1,5 +1,3 @@
-Perfect 👍 since you’re making a `smart_views` package, a good **`README.md`** should explain what it is, how to install, and give code examples.
-Here’s a clean version you can drop into your repo:
 
 ---
 
