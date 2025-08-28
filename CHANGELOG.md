@@ -3,7 +3,7 @@
 
 # 📑 CHANGELOG
 
-## \[1.0.0] - 2025-08-28
+## \[0.0.1] - 2025-08-28
 
 * 🎉 Initial release of `smart_views`
 * Added `SmartListView` with empty state support
