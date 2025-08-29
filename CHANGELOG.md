@@ -1,20 +1,25 @@
-## 0.0.4/2025-08-28
+## 0.0.5
+
+* change log format set
+
+## 0.0.4
+
 * Code has no errors, warnings, lints, or formatting issues
 * Added usage examples to improve package documentation.
 * General cleanup and minor improvements.
-* Removed deprecated warnings and updated code for 
+* Removed deprecated warnings and updated code for
 
-## 0.0.3/2025-08-28
+## 0.0.3
 
 * Added usage examples to improve package documentation.
 * Removed deprecated warnings and updated code for latest Flutter/Dart compatibility.
 * General cleanup and minor improvements.
 
-## 0.0.2/2025-08-28 
+## 0.0.2
 
 * Updated README.md with usage examples and installation instructions.
 
-## 0.0.1/2025-08-28
+## 0.0.1
 
 * Initial release of `smart_views`
 * Added `SmartListView` with empty state support
