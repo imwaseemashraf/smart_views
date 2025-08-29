@@ -16,8 +16,10 @@ Widget buildSmartTransition({
       return FadeTransition(opacity: animation, child: child);
     case SmartAnimationType.slide:
       return SlideTransition(
-        position: Tween<Offset>(begin: beginOffset, end: Offset.zero)
-            .animate(animation),
+        position: Tween<Offset>(
+          begin: beginOffset,
+          end: Offset.zero,
+        ).animate(animation),
         child: child,
       );
     case SmartAnimationType.scale:

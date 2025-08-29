@@ -25,7 +25,7 @@ class SmartListView extends ListView {
     super.restorationId,
     super.clipBehavior,
     this.emptyWidget,
-  })  : smartItemCount = children.length;
+  }) : smartItemCount = children.length;
 
   SmartListView.builder({
     super.key,
@@ -46,8 +46,8 @@ class SmartListView extends ListView {
     super.restorationId,
     super.clipBehavior,
     this.emptyWidget,
-  })  : smartItemCount = itemCount,
-        super.builder();
+  }) : smartItemCount = itemCount,
+       super.builder();
 
   SmartListView.separated({
     super.key,
@@ -67,8 +67,8 @@ class SmartListView extends ListView {
     super.restorationId,
     super.clipBehavior,
     this.emptyWidget,
-  })  : smartItemCount = itemCount,
-        super.separated();
+  }) : smartItemCount = itemCount,
+       super.separated();
 
   @override
   Widget buildChildLayout(BuildContext context) {
@@ -101,7 +101,7 @@ class SmartGridView extends GridView {
     super.restorationId,
     super.clipBehavior,
     this.emptyWidget,
-  })  : smartItemCount = children.length;
+  }) : smartItemCount = children.length;
 
   SmartGridView.builder({
     super.key,
@@ -121,8 +121,8 @@ class SmartGridView extends GridView {
     super.restorationId,
     super.clipBehavior,
     this.emptyWidget,
-  })  : smartItemCount = itemCount,
-        super.builder();
+  }) : smartItemCount = itemCount,
+       super.builder();
 
   @override
   Widget buildChildLayout(BuildContext context) {
@@ -132,5 +132,3 @@ class SmartGridView extends GridView {
     return super.buildChildLayout(context);
   }
 }
-
-

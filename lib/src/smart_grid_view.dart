@@ -24,7 +24,7 @@ class SmartGridView extends GridView {
     super.restorationId,
     super.clipBehavior,
     this.emptyWidget,
-  })  : smartItemCount = children.length;
+  }) : smartItemCount = children.length;
 
   SmartGridView.builder({
     super.key,
@@ -44,8 +44,8 @@ class SmartGridView extends GridView {
     super.restorationId,
     super.clipBehavior,
     this.emptyWidget,
-  })  : smartItemCount = itemCount,
-        super.builder();
+  }) : smartItemCount = itemCount,
+       super.builder();
 
   @override
   Widget buildChildLayout(BuildContext context) {

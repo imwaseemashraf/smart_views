@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:smart_views/src/smart_page_view.dart';
+
 void main() {
   testWidgets('SmartPageView shows emptyWidget when no items', (tester) async {
     await tester.pumpWidget(
@@ -24,7 +25,8 @@ void main() {
           child: SmartPageView<String>(
             items: ["One", "Two"],
             emptyWidget: const Text("Nothing Here"),
-            itemBuilder: (context, index) => Text("Page ${["One", "Two"][index]}"),
+            itemBuilder: (context, index) =>
+                Text("Page ${["One", "Two"][index]}"),
           ),
         ),
       ),

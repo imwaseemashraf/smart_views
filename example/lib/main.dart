@@ -42,9 +42,8 @@ class _DemoAppState extends State<DemoApp> {
               child: SmartListView.builder(
                 itemCount: items.length,
                 emptyWidget: const Center(child: Text('No items yet')),
-                itemBuilder: (context, index) => ListTile(
-                  title: Text(items[index]),
-                ),
+                itemBuilder: (context, index) =>
+                    ListTile(title: Text(items[index])),
               ),
             ),
             const Divider(),
@@ -59,9 +58,8 @@ class _DemoAppState extends State<DemoApp> {
                   mainAxisSpacing: 8,
                   crossAxisSpacing: 8,
                 ),
-                itemBuilder: (context, index) => Card(
-                  child: Center(child: Text(items[index])),
-                ),
+                itemBuilder: (context, index) =>
+                    Card(child: Center(child: Text(items[index]))),
               ),
             ),
             const Divider(),
@@ -70,8 +68,9 @@ class _DemoAppState extends State<DemoApp> {
               height: 260,
               child: SmartAnimatedListView(
                 items: items,
-                emptyWidget:
-                const Center(child: Text('No animated list items')),
+                emptyWidget: const Center(
+                  child: Text('No animated list items'),
+                ),
                 animationType: SmartAnimationType.slide,
                 itemBuilder: (context, index, animation) {
                   return SizeTransition(
@@ -90,8 +89,9 @@ class _DemoAppState extends State<DemoApp> {
               height: 260,
               child: SmartAnimatedGridView(
                 items: items,
-                emptyWidget:
-                const Center(child: Text('No animated grid items')),
+                emptyWidget: const Center(
+                  child: Text('No animated grid items'),
+                ),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
                   mainAxisSpacing: 8,
@@ -101,9 +101,7 @@ class _DemoAppState extends State<DemoApp> {
                 itemBuilder: (context, index, animation) {
                   return ScaleTransition(
                     scale: animation,
-                    child: Card(
-                      child: Center(child: Text(items[index])),
-                    ),
+                    child: Card(child: Center(child: Text(items[index]))),
                   );
                 },
               ),

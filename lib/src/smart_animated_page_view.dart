@@ -1,12 +1,6 @@
-
 import 'package:flutter/material.dart';
 
-enum PageAnimationType {
-  fade,
-  scale,
-  rotate,
-  slide,
-}
+enum PageAnimationType { fade, scale, rotate, slide }
 
 class SmartAnimatedPageView<T> extends StatefulWidget {
   final List<T> items;
@@ -29,7 +23,8 @@ class SmartAnimatedPageView<T> extends StatefulWidget {
   });
 
   @override
-  State<SmartAnimatedPageView<T>> createState() => _SmartAnimatedPageViewState<T>();
+  State<SmartAnimatedPageView<T>> createState() =>
+      _SmartAnimatedPageViewState<T>();
 }
 
 class _SmartAnimatedPageViewState<T> extends State<SmartAnimatedPageView<T>> {
@@ -87,7 +82,10 @@ class _SmartAnimatedPageViewState<T> extends State<SmartAnimatedPageView<T>> {
                 return Transform.rotate(angle: rotation, child: child);
               case PageAnimationType.slide:
                 double offset = value * 200;
-                return Transform.translate(offset: Offset(offset, 0), child: child);
+                return Transform.translate(
+                  offset: Offset(offset, 0),
+                  child: child,
+                );
             }
           },
           child: widget.itemBuilder(context, index),

@@ -3,7 +3,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:smart_views/smart_views.dart';
 
 void main() {
-  testWidgets('SmartListView shows emptyWidget when list is empty', (tester) async {
+  testWidgets('SmartListView shows emptyWidget when list is empty', (
+    tester,
+  ) async {
     await tester.pumpWidget(
       MaterialApp(
         home: SmartListView(
@@ -16,7 +18,9 @@ void main() {
     expect(find.text("Empty"), findsOneWidget);
   });
 
-  testWidgets('SmartListView shows items when list is not empty', (tester) async {
+  testWidgets('SmartListView shows items when list is not empty', (
+    tester,
+  ) async {
     await tester.pumpWidget(
       MaterialApp(
         home: SmartListView.builder(

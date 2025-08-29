@@ -48,7 +48,10 @@ class _SmartAnimatedGridViewState<T> extends State<SmartAnimatedGridView<T>> {
     for (int i = 0; i < widget.items.length; i++) {
       if (i >= _items.length) {
         _items.insert(i, widget.items[i]);
-        _listKey.currentState?.insertItem(i, duration: widget.animationDuration);
+        _listKey.currentState?.insertItem(
+          i,
+          duration: widget.animationDuration,
+        );
       }
     }
 
@@ -58,7 +61,7 @@ class _SmartAnimatedGridViewState<T> extends State<SmartAnimatedGridView<T>> {
         final removedItem = _items.removeAt(i);
         _listKey.currentState?.removeItem(
           i,
-              (context, animation) =>
+          (context, animation) =>
               _buildAnimatedItem(context, i, removedItem, animation),
           duration: widget.animationDuration,
         );
@@ -67,7 +70,11 @@ class _SmartAnimatedGridViewState<T> extends State<SmartAnimatedGridView<T>> {
   }
 
   Widget _buildAnimatedItem(
-      BuildContext context, int index, T item, Animation<double> animation) {
+    BuildContext context,
+    int index,
+    T item,
+    Animation<double> animation,
+  ) {
     Widget child = widget.itemBuilder(context, index, animation);
 
     switch (widget.animationType) {
@@ -75,8 +82,10 @@ class _SmartAnimatedGridViewState<T> extends State<SmartAnimatedGridView<T>> {
         return FadeTransition(opacity: animation, child: child);
       case SmartAnimationType.slide:
         return SlideTransition(
-          position:
-          Tween<Offset>(begin: const Offset(0, 0.3), end: Offset.zero).animate(animation),
+          position: Tween<Offset>(
+            begin: const Offset(0, 0.3),
+            end: Offset.zero,
+          ).animate(animation),
           child: child,
         );
       case SmartAnimationType.scale:
@@ -95,8 +104,12 @@ class _SmartAnimatedGridViewState<T> extends State<SmartAnimatedGridView<T>> {
       gridDelegate: widget.gridDelegate,
       itemCount: _items.length,
       itemBuilder: (context, index) {
-        return _buildAnimatedItem(context, index, _items[index],
-            kAlwaysCompleteAnimation); // Each rebuild animates instantly
+        return _buildAnimatedItem(
+          context,
+          index,
+          _items[index],
+          kAlwaysCompleteAnimation,
+        ); // Each rebuild animates instantly
       },
     );
   }

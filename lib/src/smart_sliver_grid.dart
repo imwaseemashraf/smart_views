@@ -24,10 +24,7 @@ class SmartSliverGrid extends StatelessWidget {
       return SliverToBoxAdapter(child: emptyWidget ?? const SizedBox());
     }
     return SliverGrid(
-      delegate: SliverChildBuilderDelegate(
-        itemBuilder,
-        childCount: itemCount,
-      ),
+      delegate: SliverChildBuilderDelegate(itemBuilder, childCount: itemCount),
       gridDelegate: gridDelegate,
     );
   }

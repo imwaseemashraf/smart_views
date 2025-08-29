@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:smart_views/smart_views.dart';
+
 void main() {
-  testWidgets('SmartAnimatedPageView shows emptyWidget when no items', (tester) async {
+  testWidgets('SmartAnimatedPageView shows emptyWidget when no items', (
+    tester,
+  ) async {
     await tester.pumpWidget(
       MaterialApp(
         home: SmartAnimatedPageView<String>(
@@ -16,7 +19,9 @@ void main() {
     expect(find.text("Empty Pages"), findsOneWidget);
   });
 
-  testWidgets('SmartAnimatedPageView shows pages when items exist', (tester) async {
+  testWidgets('SmartAnimatedPageView shows pages when items exist', (
+    tester,
+  ) async {
     await tester.pumpWidget(
       MaterialApp(
         home: SizedBox(
